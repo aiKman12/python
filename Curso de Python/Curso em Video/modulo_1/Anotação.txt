@@ -1,0 +1,47 @@
+# Ordem de procedencia 
+1 todos os parenteses ()
+2 exponencial **
+3 Multiplicação (*), divisao (/), divisao inteira (//) e resto da divisao (%)
+4 soma e subtração
+
+Outra opção para potencia é pow(4,3)=64 é igual a 4**3
+Raiz quadrada é 25**(1/2)=5
+Raiz cubica é 25**(1/3)=5.0265...
+
+exemplo
+print('A soma é {}, \n o produto é {} e a divisao é {:.3f} '.format(s,m,d), end='') 
+print('A divisao inteira {} e potencia {}'.format(di,e))              
+
+# :.3f significa depois da , 3 casas decimais e f de float
+# o end='' (significa que nao vai ter quebra de linha)
+#  \n (quebra de linha)
+
+-------Analise------
+# frase = Curso em Video Python (possui 21 caracteres contanto do 0)
+len(frase) = conta a quantidade de caracteres
+frase.count('o') = conta quantas letras o tem
+frase.count('o',0,13) = ele conta quantos o tem do 0 ao 13
+frase.find('deo') = conta quantas vezes encontra o deo, ele mostra em que momento começou a posição
+frase.find('android') = quando pede para pesquisar uma frase que nao existe ele retorna -1
+'Curso'in frase = se existe o curso em 'frase', retornando True ou False
+
+---------transformação----------
+frase.replace('Python','Andorid') = encontra em 'frase' a palavra Python e substitui pela android
+frase.upper() = colocar tudo em maiusculo
+frase.lower() = coloca tudo em minusculo
+frase.capitalize() = coloca tudo para minusculo deixando so a primeira letra em maiuscula
+frase.title() = ele coloca a primeira letra de cada palavra em maiuscula 
+frase.strip() = remoção dos espaços vazios inuteis no inicio e no final
+frase.rstrip() = so remove os ultimos espaços 'right'
+frase.lstrip() = remove os da esquerda 'left'
+
+------divisao--------
+frase.split() = onde tem espaço dentro de uma frase e elimina criando novas listas (criando 4 palavras seprada iniciando em o)
+'-'.join(frase) = onde tem espaço ele coloca -
+
+---------aula 10 - CONDIÇÃO -------------
+carro.esquerda  carro.direita
+if carro.esquerda():
+    bloco True
+else:
+    bloco False

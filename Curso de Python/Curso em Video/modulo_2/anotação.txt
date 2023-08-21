@@ -1,0 +1,12 @@
+laço c no intervalo(1:10)
+    passo
+pega
+tudo isso fica em linguagem
+for c in range(1:10):
+    passo
+pega
+
+c=1 while c !=10:
+print(c)
+c+=1
+print('Acabou')

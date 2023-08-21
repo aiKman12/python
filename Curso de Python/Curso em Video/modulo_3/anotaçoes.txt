@@ -1,0 +1,73 @@
+# Tuplas ( ) = As tuplas são variáveis compostas e imutáveis que permitem armazenar vários valores em uma mesma estrutura, acessíveis por chaves individuais.
+TUPLAS SAO IMUTAVEIS
+# Dicionarios { } =
+# Listas [ ] = 
+------------------------------ TUPLAS --------------------
+            -4        -3    -2     -1
+             0         1     2      3
+lanche [hamburguer, suco, pizza, pudim]
+for c in lanche:
+    print(c)   ---- Vai imprimir um por vez, no final ele sai 
+ print(lanche[2]) ----imprime a pizza
+ print(lanche[0:2]) ----imprime hamburguer, suco
+ print(lanche[1:]) ------- imprime suco, pizza e pudim
+ print(lanche[-1]) ------ pudim
+ len(lanche) ------ conta quanto elemento dentro do lanche
+
+ ------------------------------ LISTAS ------------------
+lanche = ['hamburguer', 'suco', 'pizza', 'picole']
+
+lanche.append('cokie')   # adiciona um item na lista lanche
+lanche = ['hamburguer', 'suco', 'pizza', 'picole', 'cokie']
+
+lanche.insert(0, 'cachorroquente')  #adicionar o cachorroquente na posição 0
+lanche = ['cachorroquente','hamburguer', 'suco', 'pizza', 'picole', 'cokie']
+
+del lanche[3]  # apaga o item 3
+lanche = ['cachorroquente','hamburguer', 'suco', 'picole', 'cokie']
+
+lanche.pop()  #remove o ultimo
+lanche.pop(3)  # pop normalmente apaga o ultimo item, porem colocando o 3 elimina o item 3
+lanche = ['cachorroquente', 'hamburguer', 'suco', 'cokie']
+
+lanche.remove('suco')  # remove pelo conteudo que possui na lista
+lanche = ['cachorroquente', 'hamburguer', 'cokie']
+
+# se a pizza nao esta em lanche tem como usar o if, para apagar quando tiver pizza
+lanche = ['cachorroquente', 'hamburguer', 'cokie']
+if 'pizza' in lanche:
+    lanche.remove('pizza')
+
+valores=list(range(4,11))  # criar uma lista a partir do range (de 4 a 10)
+
+valores=[8,2,5,4,9,3,0]
+valores.sort()  # ele ordena (0,2,3,4,5,8,9)
+valores.sort(reverse=true)   # ordena na forma reversa (9,8,5,4,3,2,0)
+len(valores)  # conta quantos valores tem contando do 0 ele tem 7
+
+----------- Dicionarios --------------------
+dados = dict()
+dados = {'nome': 'Pedro', 'idade': 25}
+print(dados['nome])  # 
+dados['sexo] = 'M'   #adiciona o sexo no Dicionario
+
+filme = ['titulo':'star wars', 'ano':'1977', 'diretor':'jorge lucas']
+print(filome.values())      # Retorna todos os valores (tudo)
+print(filmes.keys)          # Retorna apenas (titulo, ano, diretor)
+print(filme.items())        # Retorna os dois values e keys
+
+for k, v in filme.items():
+    print(f'{k} é {v}')     # O titulo é Star wars
+                            # O ano é 1977
+                            # O diretor é George lucas
+
+-------------------- FUNÇOES -----------------------
+# algumas funçoes 
+print()
+len()
+input()
+int()
+float()
+
+----------------------- MODULOS E PACOTES -------------
+
